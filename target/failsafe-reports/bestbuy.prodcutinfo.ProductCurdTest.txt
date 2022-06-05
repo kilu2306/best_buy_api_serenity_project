@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: bestbuy.prodcutinfo.ProductCurdTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.899 sec - in bestbuy.prodcutinfo.ProductCurdTest
