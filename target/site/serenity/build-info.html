@@ -36,7 +36,7 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -44,7 +44,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors',  0]
+                ['Errors',  1]
             ]
         ], {
 
@@ -73,17 +73,17 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '16 / 16 tests passed' },
+                {label: '0 / 16 tests passed' },
                 {label: '0 / 16 tests pending'},
                 {label: '0 / 16 tests not executed'},
                 {label: '0 / 16 tests failed'},
-                {label: '0 / 16 errors'}
+                {label: '16 / 16 errors'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -91,7 +91,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors', 0]
+                ['Errors', 1]
             ]
         ], {
 
@@ -121,11 +121,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '16 / 16 tests passed (1% of all test steps)' },
+                {label: '0 / 16 tests passed (0% of all test steps)' },
                 {label: '0 / 16 tests pending'},
                 {label: '0 / 16 tests not executed'},
                 {label: '0 / 16 tests failed (0% of all test steps)'},
-                {label: '0 / 16 errors (0% of all test steps)'}
+                {label: '16 / 16 errors (1% of all test steps)'}
             ]
         });
 
@@ -186,7 +186,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-06-2022 17:22</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-06-2022 13:01</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>

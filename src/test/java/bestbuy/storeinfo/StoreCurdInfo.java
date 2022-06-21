@@ -32,6 +32,7 @@ public class StoreCurdInfo extends TestBase {
     public void test001() {
         ValidatableResponse response = storeSteps.creatStore(name, type, address, address2, city, state,
                 zip, lat, lng, hours);
+
         response.log().all().statusCode(201);
         storeId = response.extract().path("id");
         System.out.println(storeId);

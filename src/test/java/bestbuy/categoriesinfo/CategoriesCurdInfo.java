@@ -9,6 +9,8 @@ import net.thucydides.core.annotations.Title;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static org.hamcrest.Matchers.equalTo;
+
 @RunWith(SerenityRunner.class)
 
 public class CategoriesCurdInfo extends TestBase {
@@ -36,6 +38,8 @@ public class CategoriesCurdInfo extends TestBase {
 
         ValidatableResponse response = categoriesSteps.getSingleCategory(id);
         response.log().all().statusCode(200);
+
+        response.body("name",equalTo(name));
     }
 
     @Title("This will update category")

@@ -1,4 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: bestbuy.categoriesinfo.CategoriesCurdInfo
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.154 sec - in bestbuy.categoriesinfo.CategoriesCurdInfo
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 24.086 sec <<< FAILURE! - in bestbuy.categoriesinfo.CategoriesCurdInfo
+test001(bestbuy.categoriesinfo.CategoriesCurdInfo)  Time elapsed: 10.007 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at bestbuy.categoriesinfo.CategoriesCurdInfo.test001(CategoriesCurdInfo.java:30)
+
+test002(bestbuy.categoriesinfo.CategoriesCurdInfo)  Time elapsed: 4.11 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at bestbuy.categoriesinfo.CategoriesCurdInfo.test002(CategoriesCurdInfo.java:40)
+
+test003(bestbuy.categoriesinfo.CategoriesCurdInfo)  Time elapsed: 4.069 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at bestbuy.categoriesinfo.CategoriesCurdInfo.test003(CategoriesCurdInfo.java:50)
+
+test004(bestbuy.categoriesinfo.CategoriesCurdInfo)  Time elapsed: 4.086 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at bestbuy.categoriesinfo.CategoriesCurdInfo.test004(CategoriesCurdInfo.java:58)
+

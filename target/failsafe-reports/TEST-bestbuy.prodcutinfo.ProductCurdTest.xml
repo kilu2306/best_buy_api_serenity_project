@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="bestbuy.prodcutinfo.ProductCurdTest" time="4.661" tests="4" errors="0" skipped="0" failures="0">
+<testsuite name="bestbuy.prodcutinfo.ProductCurdTest" time="16.421" tests="4" errors="4" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.3.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,8 +63,202 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="test001" classname="bestbuy.prodcutinfo.ProductCurdTest" time="4.37"/>
-  <testcase name="test002" classname="bestbuy.prodcutinfo.ProductCurdTest" time="0.084"/>
-  <testcase name="test003" classname="bestbuy.prodcutinfo.ProductCurdTest" time="0.099"/>
-  <testcase name="test004" classname="bestbuy.prodcutinfo.ProductCurdTest" time="0.108"/>
+  <testcase name="test001" classname="bestbuy.prodcutinfo.ProductCurdTest" time="4.102">
+    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at bestbuy.prodcutinfo.ProductCurdTest.test001(ProductCurdTest.java:37)
+</error>
+    <system-err><![CDATA[23352 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: This will delete category
+---------------------------------------------------------------------
+23353 [main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP DELETE
+23353 [main] ERROR net.serenitybdd.core.Serenity - Some exception during recording fields
+23605 [pool-1-thread-3] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This will update category to file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\6868f263d0a049188bcb1526df96b992e6e7c8e77193eeb3fd690461f3548074.json (using temp file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\6868f263d0a049188bcb1526df96b992e6e7c8e77193eeb3fd690461f3548074.jsonc64b80b1-46a8-423a-bf5c-99a4d34a254f)
+23605 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This will fatch single category to file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\4dccf7912850f9e9d9a2ad9c110fe61ca6e9843295f76e10f6551cd630ba8c60.json (using temp file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\4dccf7912850f9e9d9a2ad9c110fe61ca6e9843295f76e10f6551cd630ba8c60.jsonb60c1135-74eb-4a07-a9d6-21f1aa02dc31)
+23605 [pool-1-thread-4] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This will delete category to file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\977a30ba58d5924065d58dfad64f114d1c1cf4f2c072a0f2d9ac003d38e9c077.json (using temp file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\977a30ba58d5924065d58dfad64f114d1c1cf4f2c072a0f2d9ac003d38e9c077.jsonc2340bc4-e3f4-4840-b0cb-2260d4f06182)
+23607 [pool-1-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This will creat categories to file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\5d64c7b2af1f5cdb0c9eac137b9cd3e6eb056c2d4dd4d92d9fe55d01b8d3b428.json (using temp file C:\Users\pkinj\IdeaProjects\best_buy_api_serenity_project\target\site\serenity\5d64c7b2af1f5cdb0c9eac137b9cd3e6eb056c2d4dd4d92d9fe55d01b8d3b428.json24bd288f-e5e2-48ba-908d-9b324a0ea8a4)
+23933 [pool-2-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Categories curd info:test002 in 4dccf7912850f9e9d9a2ad9c110fe61ca6e9843295f76e10f6551cd630ba8c60.html in directory target\site\serenity  
+23933 [pool-2-thread-3] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Categories curd info:test003 in 6868f263d0a049188bcb1526df96b992e6e7c8e77193eeb3fd690461f3548074.html in directory target\site\serenity  
+23933 [pool-2-thread-4] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Categories curd info:test004 in 977a30ba58d5924065d58dfad64f114d1c1cf4f2c072a0f2d9ac003d38e9c077.html in directory target\site\serenity  
+23933 [pool-2-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Categories curd info:test001 in 5d64c7b2af1f5cdb0c9eac137b9cd3e6eb056c2d4dd4d92d9fe55d01b8d3b428.html in directory target\site\serenity  
+24425 [main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Product curd test
+24425 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test001
+-------------------------------------------------------------------
+24425 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 5
+]]></system-err>
+  </testcase>
+  <testcase name="test002" classname="bestbuy.prodcutinfo.ProductCurdTest" time="4.117">
+    <error message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1522)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1288)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)
+	at net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)
+	at net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)
+	at net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)
+	at net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)
+	at net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)
+	at net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1722)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1728)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:168)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:227)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:48)
+	at net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:27)
+	at bestbuy.prodcutinfo.ProductSteps.getProductListById(ProductSteps.java:40)
+	at bestbuy.prodcutinfo.ProductCurdTest.test002(ProductCurdTest.java:45)
+</error>
+    <system-err><![CDATA[28563 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: this will creat new product 
+---------------------------------------------------------------------
+28563 [main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP POST
+28563 [main] ERROR net.serenitybdd.core.Serenity - Some exception during recording fields
+28564 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test002
+-------------------------------------------------------------------
+28564 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 6
+]]></system-err>
+  </testcase>
+  <testcase name="test003" classname="bestbuy.prodcutinfo.ProductCurdTest" time="4.12">
+    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at bestbuy.prodcutinfo.ProductCurdTest.test003(ProductCurdTest.java:55)
+</error>
+    <system-err><![CDATA[32683 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: This will fatch the product by id 
+---------------------------------------------------------------------
+32683 [main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP GET
+32683 [main] ERROR net.serenitybdd.core.Serenity - Some exception during recording fields
+32684 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test003
+-------------------------------------------------------------------
+32684 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 7
+]]></system-err>
+  </testcase>
+  <testcase name="test004" classname="bestbuy.prodcutinfo.ProductCurdTest" time="4.082">
+    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at bestbuy.prodcutinfo.ProductCurdTest.test004(ProductCurdTest.java:68)
+</error>
+    <system-err><![CDATA[36809 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: this will update  product 
+---------------------------------------------------------------------
+36809 [main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP PATCH
+36810 [main] ERROR net.serenitybdd.core.Serenity - Some exception during recording fields
+36811 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test004
+-------------------------------------------------------------------
+36812 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 8
+]]></system-err>
+  </testcase>
 </testsuite>

@@ -15,6 +15,7 @@ public class ServiceCurdInfo extends TestBase {
 
     static String name = "kiya";
     static int serviceId;
+    ValidatableResponse response;
 
     @Steps
     ServiceSteps serviceSteps;
@@ -22,7 +23,7 @@ public class ServiceCurdInfo extends TestBase {
     @Title("this will creat service0")
     @Test
     public void test001() {
-        ValidatableResponse response = serviceSteps.creatService(name);
+        response = serviceSteps.creatService(name);
         response.log().all().statusCode(201);
         serviceId = response.extract().path("id");
         System.out.println(serviceId);
@@ -31,7 +32,7 @@ public class ServiceCurdInfo extends TestBase {
     @Title("This will fath single service")
     @Test
     public void test002() {
-        ValidatableResponse response = serviceSteps.getSingleService(serviceId);
+       response = serviceSteps.getSingleService(serviceId);
         response.log().all().statusCode(200);
 
         response.body("name", equalTo(name));
@@ -41,14 +42,14 @@ public class ServiceCurdInfo extends TestBase {
     @Test
     public void test003(){
         name= name+"upadated_01";
-        ValidatableResponse response= serviceSteps.updateService(serviceId,name);
+      response= serviceSteps.updateService(serviceId,name);
         response.log().all().statusCode(200);
     }
 
     @Title("This will delete the service")
     @Test
     public void test004(){
-        ValidatableResponse response= serviceSteps.deleteServiceByid(serviceId);
+        response= serviceSteps.deleteServiceByid(serviceId);
         response.log().all().statusCode(200);
 
         ValidatableResponse response1= serviceSteps.getSingleService(serviceId);

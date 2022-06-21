@@ -35,11 +35,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 16],
+                ['Passing', 0],
                 ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0],
+                ['Errors',  16],
                 ['Compromised',  0],
                 ['Untested',  0],
             ]
@@ -68,11 +68,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '16 requirements tested successfully'},
+                {label: '0 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
                 {label: '0} requirements with failures'},
-                {label: '0} requirements with errors'},
+                {label: '16} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
             ]
@@ -160,7 +160,7 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-06-2022 17:22</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-06-2022 12:59</span>
     <br style="clear:left"/>
 </div>
 
@@ -193,8 +193,8 @@
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
                                     <td>16</td>
-                                    <td>16</td>
                                     <td>0</td>
+                                    <td>16</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td></td>
@@ -224,8 +224,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>16</td>
-            <td>16 (100%)</td>
             <td>0 (0%)</td>
+            <td>16 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -240,14 +240,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>16</td>
-            <td>16 (100%)</td>
             <td>0 (0%)</td>
+            <td>16 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">9 seconds</td>
+                <td colspan="5">1 minutes 11 seconds</td>
         </tr>
         </body>
     </table>
@@ -276,368 +276,368 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="5d64c7b2af1f5cdb0c9eac137b9cd3e6eb056c2d4dd4d92d9fe55d01b8d3b428.html" class="ellipsis"
-                                           title="This will creat categories ">
+                                           title="This will creat categories Runtime exception: Some exception dur...">
                                             This will creat categories
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:25">17:22:25</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 12:59:58">12:59:58</td>
 
-                                <td class="SUCCESS-text">3.76</td>
+                                <td class="ERROR-text">9.95</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="4dccf7912850f9e9d9a2ad9c110fe61ca6e9843295f76e10f6551cd630ba8c60.html" class="ellipsis"
-                                           title="This will fatch single category ">
+                                           title="This will fatch single category Runtime exception: Some exception dur...">
                                             This will fatch single category
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:29">17:22:29</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:08">13:00:08</td>
 
-                                <td class="SUCCESS-text">0.08</td>
+                                <td class="ERROR-text">4.11</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="6868f263d0a049188bcb1526df96b992e6e7c8e77193eeb3fd690461f3548074.html" class="ellipsis"
-                                           title="This will update category ">
+                                           title="This will update category Runtime exception: Some exception dur...">
                                             This will update category
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:29">17:22:29</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:12">13:00:12</td>
 
-                                <td class="SUCCESS-text">0.07</td>
+                                <td class="ERROR-text">4.07</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="977a30ba58d5924065d58dfad64f114d1c1cf4f2c072a0f2d9ac003d38e9c077.html" class="ellipsis"
-                                           title="This will delete category ">
+                                           title="This will delete category Runtime exception: Some exception dur...">
                                             This will delete category
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">4</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:29">17:22:29</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:16">13:00:16</td>
 
-                                <td class="SUCCESS-text">0.17</td>
+                                <td class="ERROR-text">4.09</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="3238ce7ee425631f67992cb298796d4da2b0ced64c30418f3003092444eb6cda.html" class="ellipsis"
-                                           title="this will creat new product  ">
+                                           title="this will creat new product  Runtime exception: Some exception dur...">
                                             this will creat new product
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:25">17:22:25</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:21">13:00:21</td>
 
-                                <td class="SUCCESS-text">4.32</td>
+                                <td class="ERROR-text">4.14</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="3f909185b3eee5e6b9e0283c3b845d9ee1bb64962409ec2f3f7b463b7685f8dc.html" class="ellipsis"
-                                           title="This will fatch the product by id  ">
+                                           title="This will fatch the product by id  Runtime exception: Some exception dur...">
                                             This will fatch the product by id
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:30">17:22:30</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:25">13:00:25</td>
 
-                                <td class="SUCCESS-text">0.09</td>
+                                <td class="ERROR-text">4.12</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="8cfc44c811c3676ffff70f53410e6e8c156314abd7415c8bbc9fffdedb96421d.html" class="ellipsis"
-                                           title="this will update  product  ">
+                                           title="this will update  product  Runtime exception: Some exception dur...">
                                             this will update  product
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">4</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:30">17:22:30</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:29">13:00:29</td>
 
-                                <td class="SUCCESS-text">0.1</td>
+                                <td class="ERROR-text">4.12</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="be9862f7ca550702e39681491d5d63e0fdfdf5451e81ba8fe3bd23f1d33b0db2.html" class="ellipsis"
-                                           title="This will delete product  ">
+                                           title="This will delete product  Runtime exception: Some exception dur...">
                                             This will delete product
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">4</td>
+                                <td class="ERROR-text">4</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:30">17:22:30</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:34">13:00:34</td>
 
-                                <td class="SUCCESS-text">0.11</td>
+                                <td class="ERROR-text">4.08</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="d1ff88c0e4a8f977a8e0427abffe94931bc7cac0ce95eca392842c5547705b02.html" class="ellipsis"
-                                           title="this will creat service0 ">
+                                           title="this will creat service0 Runtime exception: Some exception dur...">
                                             this will creat service0
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:31">17:22:31</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:38">13:00:38</td>
 
-                                <td class="SUCCESS-text">0.36</td>
+                                <td class="ERROR-text">4.11</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="07ac472d17f96f829c24394069f9b39fdac1bd9f67d7c6175b02494660a4ad5b.html" class="ellipsis"
-                                           title="This will fath single service ">
+                                           title="This will fath single service Runtime exception: Some exception dur...">
                                             This will fath single service
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:32">17:22:32</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:42">13:00:42</td>
 
-                                <td class="SUCCESS-text">0.05</td>
+                                <td class="ERROR-text">4.09</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="d21454079450d8460c0a7053efc4d8d43d302aac24a8d2b6c484a5254524c3bd.html" class="ellipsis"
-                                           title="This will update service ">
+                                           title="This will update service Runtime exception: Some exception dur...">
                                             This will update service
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:32">17:22:32</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:46">13:00:46</td>
 
-                                <td class="SUCCESS-text">0.04</td>
+                                <td class="ERROR-text">4.06</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="6fc726b511daf2527b7a8228411137f9e7322d885fec978aca44538cd6d15d1b.html" class="ellipsis"
-                                           title="This will delete the service ">
+                                           title="This will delete the service Runtime exception: Some exception dur...">
                                             This will delete the service
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">4</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:32">17:22:32</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:50">13:00:50</td>
 
-                                <td class="SUCCESS-text">0.05</td>
+                                <td class="ERROR-text">4.1</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="c37e18fbc86d0f2b7331cc477226da43cf8c55fb1de1514c6c5fc496b3335ba5.html" class="ellipsis"
-                                           title="creat a store detail ">
+                                           title="creat a store detail Runtime exception: Some exception dur...">
                                             creat a store detail
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:32">17:22:32</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:54">13:00:54</td>
 
-                                <td class="SUCCESS-text">0.06</td>
+                                <td class="ERROR-text">4.1</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="3076c50ac4ba181a0e0fc4d70a06fec135e3730325258451ccdc77d43300e3e8.html" class="ellipsis"
-                                           title="Get single store detail ">
+                                           title="Get single store detail Runtime exception: Some exception dur...">
                                             Get single store detail
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:32">17:22:32</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:00:58">13:00:58</td>
 
-                                <td class="SUCCESS-text">0.04</td>
+                                <td class="ERROR-text">4.06</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="e12a78dbdd142952ec7d9d40a22f1963c72a8276eb1b1ab146525f53b49cbc6f.html" class="ellipsis"
-                                           title="this will update store detail ">
+                                           title="this will update store detail Runtime exception: Some exception dur...">
                                             this will update store detail
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">2</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:32">17:22:32</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:01:02">13:01:02</td>
 
-                                <td class="SUCCESS-text">0.05</td>
+                                <td class="ERROR-text">4.09</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="fc7d0c7b61098ed4716ccc4c40fc8bcb8605ae969644bf302ca6ca56bca2ed39.html" class="ellipsis"
-                                           title="this will delet storedetail ">
+                                           title="this will delet storedetail Runtime exception: Some exception dur...">
                                             this will delet storedetail
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">4</td>
+                                <td class="ERROR-text">3</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2022-06-05 17:22:32">17:22:32</td>
+                                <td class="ERROR-text" data-sort="2022-06-11 13:01:07">13:01:07</td>
 
-                                <td class="SUCCESS-text">0.05</td>
+                                <td class="ERROR-text">4.09</td>
                             </tr>
                         </tbody>
                     </table>
